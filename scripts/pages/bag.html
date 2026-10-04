@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Myntra Clone - Bag</title>
+
+    <link rel="stylesheet" href="bag.css" />
+
+    <!-- Google Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="logo_container">
+        <a href="../../index.html">
+          <img
+            class="Daraz_Home"
+            src="../../catagories/myntra_logo.jpg"
+            alt="Myntra Home"
+          />
+        </a>
+      </div>
+
+      <nav class="nav_bar">
+        <a href="../../index.html">Men</a>
+        <a href="../../index.html">Women</a>
+        <a href="../../index.html">Kids</a>
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html">Beauty</a>
+        <a href="../../index.html">Studio <sup>NEW</sup></a>
+      </nav>
+
+      <div class="search_bar">
+        <span class="material-symbols-outlined search_icon"> search </span>
+
+        <input
+          class="search_input"
+          type="text"
+          placeholder="Search for products, brands and more"
+        />
+      </div>
+
+      <div class="action_bar">
+        <a class="action_container" href="#">
+          <span class="material-symbols-outlined action_icon"> person </span>
+          <span class="action_name">Profile</span>
+        </a>
+
+        <a class="action_container" href="#">
+          <span class="material-symbols-outlined action_icon"> favorite </span>
+          <span class="action_name">Wishlist</span>
+        </a>
+
+        <a class="action_container" href="bag.html">
+          <span class="material-symbols-outlined action_icon">
+            shopping_bag
+          </span>
+
+          <span class="action_name">Bag</span>
+
+          <span class="bag_item_count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+      <div class="bag-page">
+        <!-- LEFT SIDE -->
+        <section class="bag-items-container">
+          <!-- Products will be inserted by bag.js -->
+        </section>
+
+        <!-- RIGHT SIDE -->
+        <aside class="bag-summary">
+          <div class="bag-details-container">
+            <div class="price-header">
+              PRICE DETAILS
+              <span class="items-count-text">(0 Items)</span>
+            </div>
+
+            <div class="price-item">
+              <span class="price-item-tag"> Total MRP </span>
+
+              <span class="price-item-value" id="total-mrp"> Rs 0 </span>
+            </div>
+
+            <div class="price-item">
+              <span class="price-item-tag"> Discount on MRP </span>
+
+              <span
+                class="price-item-value priceDetail-base-discount"
+                id="discount-on-mrp"
+              >
+                -Rs 0
+              </span>
+            </div>
+
+            <div class="price-item">
+              <span class="price-item-tag"> Convenience Fee </span>
+
+              <span class="price-item-value" id="convenience-fee"> Rs 0 </span>
+            </div>
+
+            <hr />
+
+            <div class="price-footer">
+              <span class="price-item-tag"> Total Amount </span>
+
+              <span class="price-item-value" id="total-amount"> Rs 0 </span>
+            </div>
+          </div>
+
+          <button class="btn-place-order" type="button" onclick="placeOrder()">
+            PLACE ORDER
+          </button>
+        </aside>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_coloumn">
+          <h3>online shopping</h3>
+
+          <a href="../../index.html">Men</a>
+          <a href="../../index.html">Women</a>
+          <a href="../../index.html">for gifting</a>
+          <a href="../../index.html">all collection</a>
+          <a href="../../index.html">Beauty and style items</a>
+          <a href="../../index.html">studio and bands</a>
+          <a href="../../index.html">myntra insider</a>
+        </div>
+
+        <div class="footer_coloumn">
+          <h3>Huge</h3>
+
+          <a href="../../index.html">wall hangings</a>
+          <a href="../../index.html">Women undergarments</a>
+          <a href="../../index.html">for gifting</a>
+          <a href="../../index.html">branded collection</a>
+          <a href="../../index.html">living</a>
+          <a href="../../index.html">gucci brands</a>
+          <a href="../../index.html">click insider</a>
+        </div>
+
+        <div class="footer_coloumn">
+          <h3>E-commerce platform</h3>
+
+          <a href="../../index.html">ideas</a>
+          <a href="../../index.html">home</a>
+          <a href="../../index.html">for gifting</a>
+          <a href="../../index.html">crockery</a>
+          <a href="../../index.html">Beauty makeup</a>
+          <a href="../../index.html">shoes and brands</a>
+          <a href="../../index.html">myntra</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">© 2026 www.myntra.com. All rights reserved.</div>
+    </footer>
+
+    <!-- IMPORTANT:
+         items.js must load before bag.js
+    -->
+
+    <script src="../items.js"></script>
+    <script src="bag.js"></script>
+  </body>
+</html>
